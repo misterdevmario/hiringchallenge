@@ -1,0 +1,102 @@
+.navbar_container {
+  height: 12vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-main);
+  color: var(--font-color);
+  text-transform: capitalize;
+  position: fixed;
+}
+.navbar_container-lg {
+  height: 12vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-main);
+}
+
+.navbar_container a {
+  text-decoration: none;
+}
+
+.navbar_container-appname {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar_container-pagename {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar_container-home-btn {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar_container-crud {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar_container-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar_container-lg {
+    display: none;
+  }
+
+  .navbar_container-toggle {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+  }
+
+  .navbar_container-appname-toggle {
+    display: flex;
+    width: 60vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar_container-appname-toggle h1 {
+    font-size: 3vh;
+  }
+  .navbar_container-toggle-dropdown {
+    display: flex;
+    width: 40vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar_container-toggle-links{
+    position: absolute;
+    top: 12vh;
+    right: 0;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-main);
+  }
+
+  .navbar_container-crud-toggle, .navbar_container-home-btn-toggle a{
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 4vh;
+  }
+}
