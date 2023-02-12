@@ -1,5 +1,5 @@
 import { useState, useContext, createContext, useEffect } from "react";
-import { getPostsRequest } from "../api/appRequests";
+import { getPostsRequest, getOnePostRequest } from "../api/appRequests";
 
 const appContext = createContext();
 
@@ -20,5 +20,10 @@ export const AppContextProvider = ({ children }) => {
       setAppInfo({ posts: getPosts.data });
     })();
   }, []);
-  return <appContext.Provider value={{appInfo}}>{children}</appContext.Provider>;
+
+  const getOnePost = async (id) => {
+    const post = await getOnePostRequest(id)
+    return post.data
+  }  
+  return <appContext.Provider value={{appInfo, getOnePost}}>{children}</appContext.Provider>;
 };

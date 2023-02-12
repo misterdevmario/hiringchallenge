@@ -1,9 +1,12 @@
+import HomePostCard from "../../components/homePostCard/HomePostCard"
 
 
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div className="home_container">
+      <HomePostCard/>
+    </div>
   )
 }
 

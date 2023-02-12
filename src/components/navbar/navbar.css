@@ -7,6 +7,7 @@
   color: var(--font-color);
   text-transform: capitalize;
   position: fixed;
+  z-index: 2;
 }
 .navbar_container-lg {
   height: 12vh;
@@ -18,6 +19,12 @@
 
 .navbar_container a {
   text-decoration: none;
+  
+}
+.navbar_container-home-btn a{
+  text-decoration: none;
+  color: var(--font-color);
+  
 }
 
 .navbar_container-appname {

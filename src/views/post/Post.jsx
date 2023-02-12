@@ -1,7 +1,11 @@
+import {PostCard} from "../../components/index"
+import "./post.css"
 
 const Post = () => {
   return (
-    <div>Post</div>
+    <div className="post_container">
+      <PostCard/>
+    </div>
   )
 }
 

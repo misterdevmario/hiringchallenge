@@ -22,17 +22,11 @@ const Navbar = () => {
         </h2>
         <div className="navbar_container-home-btn">
           {location.pathname !== "/" ? (
-            <button>
-              <NavLink to={"/"}>Home</NavLink>
-            </button>
+            
+              <h2><NavLink to={"/"}>Home</NavLink></h2>
+            
           ) : null}
-          {location.pathname !== "/crud" ? (
-            <div className="navbar_container-crud">
-              <button>
-                <NavLink to={"/crud"}>CRUD</NavLink>
-              </button>
-            </div>
-          ) : null}
+       
         </div>
       </div>
       <div className="navbar_container-toggle">
@@ -56,11 +50,7 @@ const Navbar = () => {
                 {location.pathname !== "/" ? (
                   <NavLink onClick={() => setToggleNav(false)} to={"/"}>Home</NavLink>
                 ) : null}
-                {location.pathname !== "/crud" ? (
-                  <div className="navbar_container-crud-toggle">
-                    <NavLink onClick={() => setToggleNav(false)} to={"/crud"}>Crud</NavLink>
-                  </div>
-                ) : null}
+             
               </div>
             </div>
           )}

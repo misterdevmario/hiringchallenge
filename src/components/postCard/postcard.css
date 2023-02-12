@@ -1,0 +1,63 @@
+.postcard_container {
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(95, 91, 86);
+  color: var(--font-color);
+}
+
+.postcard_container-img {
+  width: 50vw;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.postcard_container-img img {
+  height: 100%;
+  width: 50vw;
+  overflow: hidden;
+ 
+}
+
+.postcard_container-info{
+    height: 100%;
+    width:40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2vw;
+}
+
+@media screen and (max-width:768px) {
+    .postcard_container{
+        width: 90vw;
+        height: 90vh;
+        flex-direction: column;
+    }
+
+    .postcard_container-img{
+        width: 90vw;
+        height: 50vh;
+        overflow: hidden;
+    }
+    .postcard_container-img img{
+        width: 600px;
+        height: 400px;
+        
+    }
+
+    .postcard_container-info{
+        width: 90vw;
+        height: 40vh;
+       font-size: 1.5vh;
+       
+    }
+
+    .postcard_container-info h1,h2,h3,h4{
+padding: 2px;
+    }
+}
